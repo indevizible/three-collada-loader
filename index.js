@@ -1170,9 +1170,7 @@ var ColladaLoader = function () {
                 var geom = geometry.mesh.geometry3js;
 
                 if ( num_materials > 1 ) {
-
-                    material = new THREE.MultiMaterial( used_materials_array );
-
+                    material = used_materials_array
                 }
 
                 if ( skinController !== undefined ) {
